@@ -14,7 +14,7 @@ const Social = props => {
 
 const SocialMedia = () => (
     <div>
-        <h3>Follow Me on Social Media</h3>
+        <h2>Follow Me on Social Media</h2>
         {
             SOCIAL.map(S => (
                 <Social social={S}></Social>
