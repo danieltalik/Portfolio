@@ -1,4 +1,8 @@
-
+.socialSite{
+  display: inline-block;
+  text-align: center;
+  padding: 20px;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
