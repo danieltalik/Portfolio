@@ -1,8 +1,10 @@
 const TITLES =[
-    'a software engineer.',
-    'a sports fanatic.',
-    'a proud husband and father.',
-    'a history geek.',
-    'a video-game nerd.'
+    'Software engineer.',
+    'Ohio State grad and Buckeye',
+    'Tech Elevator alumnus',
+    'Proud husband and father.',
+    'Wannabe historian.',
+    'Hiker',
+    'Video game enthusiast.'
 ]
 export default TITLES;

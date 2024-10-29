@@ -35,10 +35,9 @@ class About extends Component {
                 <div className='container'>
                     <img src={banner} alt='Milky Way' id='background' />
                     <div className='centered'>
-                        <h1>Hello There!</h1>
-                        <img src={Me} alt='Dan Talik' style={{ height: 300, width: 300, borderRadius: 150, borderColor: 'white', borderStyle: 'solid', borderWidth: 2 }} />
-                        <h3>My name is Dan Talik.</h3>
-                        <p className={fadeVal ? 'title-fade-in' : 'title-fade-out'}> I am {title}</p>
+                        <h1 id='title'>Daniel Talik</h1>
+                        <img src={Me} alt='Dan Talik' id='danpic' />
+                        <p className={fadeVal ? 'title-fade-in' : 'title-fade-out'}>{title}</p>
                     </div>
                 </div>
                 <p>I currently live in Ohio and work as a software engineer at JPMorgan Chase.</p>

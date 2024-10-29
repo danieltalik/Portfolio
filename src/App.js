@@ -13,9 +13,11 @@ function App() {
         <About />
       </ScrollAnimation>
       <br/>
+      <br/>
       <ScrollAnimation animateIn="fadeInLeft">
         <Projects />
       </ScrollAnimation>
+      <br/>
       <br/>
       <ScrollAnimation animateIn="fadeInRight">
         <SocialMedia />
