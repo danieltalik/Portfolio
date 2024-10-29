@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TITLES from './data/titles';
-import Me from './assets/Me.jpg';
+import Me from './assets/MeUpdated.jpg';
 import banner from './assets/banner.jpg';
 import './About.css';
 
@@ -41,9 +41,9 @@ class About extends Component {
                         <p className={fadeVal ? 'title-fade-in' : 'title-fade-out'}> I am {title}</p>
                     </div>
                 </div>
-                <p>I currently live in Columbus, Ohio and work as a software consultant at g2o.</p>
+                <p>I currently live in Ohio and work as a software engineer at JPMorgan Chase.</p>
                 <p>Coding is a passion of mine, and I decided to turn it into a career in 2018, when I enrolled at Tech Elevator.</p>
-                <p>When I am not coding, I try to spend as much time with friends and loved ones as I can.</p>
+                <p>When I am not coding, I try to spend as much time with my family and loved ones.</p>
                 <p>You can also find me engrossed in the latest video game or watching my favorite sports, football and baseball.</p>
             </div>
         )

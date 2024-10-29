@@ -9,7 +9,7 @@ import SocialMedia from './SocialMedia';
 function App() {
   return (
     <div>
-      <ScrollAnimation animateIn='fadeIn'>
+      <ScrollAnimation animateIn='fadeInDown'>
         <About />
       </ScrollAnimation>
       <br/>
@@ -17,7 +17,7 @@ function App() {
         <Projects />
       </ScrollAnimation>
       <br/>
-      <ScrollAnimation animateIn="fadeInUp">
+      <ScrollAnimation animateIn="fadeInRight">
         <SocialMedia />
       </ScrollAnimation>
     </div>
