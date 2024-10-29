@@ -34,16 +34,18 @@ class About extends Component {
             <div>
                 <div className='container'>
                     <img src={banner} alt='Milky Way' id='background' />
-                    <div className='centered'>
+                    <div>
                         <h1 id='title'>Daniel Talik</h1>
                         <img src={Me} alt='Dan Talik' id='danpic' />
-                        <p className={fadeVal ? 'title-fade-in' : 'title-fade-out'}>{title}</p>
+                        <h2 className={fadeVal ? 'title-fade-in' : 'title-fade-out'} id='titles'>{title}</h2>
                     </div>
                 </div>
+            <div className='container' id='intro'>
                 <p>I currently live in Ohio and work as a software engineer at JPMorgan Chase.</p>
                 <p>Coding is a passion of mine, and I decided to turn it into a career in 2018, when I enrolled at Tech Elevator.</p>
                 <p>When I am not coding, I try to spend as much time with my family and loved ones.</p>
                 <p>You can also find me engrossed in the latest video game or watching my favorite sports, football and baseball.</p>
+            </div>
             </div>
         )
     }
