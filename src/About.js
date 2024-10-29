@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TITLES from './data/titles';
 import Me from './assets/Me.jpg';
-import galaxy from './assets/galaxy.jpg';
+import banner from './assets/banner.jpg';
 import './About.css';
 
 class About extends Component {
@@ -33,7 +33,7 @@ class About extends Component {
         return (
             <div>
                 <div className='container'>
-                    <img src={galaxy} alt='Milky Way' id='background' />
+                    <img src={banner} alt='Milky Way' id='background' />
                     <div className='centered'>
                         <h1>Hello There!</h1>
                         <img src={Me} alt='Dan Talik' style={{ height: 300, width: 300, borderRadius: 150, borderColor: 'white', borderStyle: 'solid', borderWidth: 2 }} />

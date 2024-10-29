@@ -5,16 +5,16 @@ import Laptop from '../assets/laptop.jpg';
 const PROJECTS = [
     {
         id: 1,
-        title: 'Musician Website',
-        description: 'A Spring-Boot MVC website for a musician friend.',
+        title: 'Fulltack Java/React Website',
+        description: 'A React App that Lets you Post Birthdays to an H2 Database',
         img: Josh,
-        link: "https://github.com/danieltalik/JoshSite"
+        link: "https://github.com/danieltalik/Fullstack"
 
     },
     {
         id: 2,
         title: 'Cat Adoption Service',
-        description: 'Cat adoption website for Tech Elevator for capstone.',
+        description: 'Tech Elevator capstone for cat adoption website.',
         img: Cats,
         link: "https://github.com/danieltalik/CatStone"
 

@@ -1,6 +1,7 @@
 const TITLES =[
-    'a software developer.',
+    'a software engineer.',
     'a sports fanatic.',
+    'a proud husband and father.',
     'a history geek.',
     'a video-game nerd.'
 ]
