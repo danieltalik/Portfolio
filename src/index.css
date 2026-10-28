@@ -1,17 +1,71 @@
 :root {
-  color-scheme: light;
+  color-scheme: dark;
+
+  --bg: #0b0d17;
+  --surface: #131726;
+  --surface-2: #1a1f33;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #e7e9f2;
+  --muted: #9aa3ba;
+  --accent: #a78bfa;
+  --accent-2: #60a5fa;
+  --gradient: linear-gradient(135deg, var(--accent), var(--accent-2));
+
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Space Grotesk', var(--font-body);
+
+  --radius: 16px;
+  --nav-h: 64px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-h);
 }
 
 body {
-  background: #fff;
-  color: #111;
-  font-family: 'Jost', sans-serif;
-  text-align: center;
   margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
 img {
   max-width: 100%;
+  display: block;
 }
 
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

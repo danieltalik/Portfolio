@@ -1,46 +1,35 @@
-import { useEffect, useState } from 'react';
-import TITLES from './data/titles';
-import Me from './assets/MeUpdated.jpg';
-import banner from './assets/banner.jpg';
-import './About.css';
+const FACTS = [
+    { icon: 'fa-solid fa-location-dot', label: 'Ohio' },
+    { icon: 'fa-solid fa-briefcase', label: 'Software Engineer, JPMorgan Chase' },
+    { icon: 'fa-solid fa-graduation-cap', label: 'Tech Elevator, Ohio State' },
+];
 
-const About = () => {
-    const [index, setIndex] = useState(0);
-    const [fade, setFade] = useState(false);
-
-    // Every 4s show the next title, fade it in, then fade it out after 2s.
-    useEffect(() => {
-        let fadeTimer;
-        const interval = setInterval(() => {
-            setIndex(prev => (prev + 1) % TITLES.length);
-            setFade(true);
-            fadeTimer = setTimeout(() => setFade(false), 2000);
-        }, 4000);
-
-        return () => {
-            clearInterval(interval);
-            clearTimeout(fadeTimer);
-        };
-    }, []);
-
-    return (
-        <div>
-            <div className='container'>
-                <img src={banner} alt='' id='background' />
-                <div>
-                    <h1 id='title'>Daniel Talik</h1>
-                    <img src={Me} alt='Dan Talik' id='danpic' />
-                    <h2 className={fade ? 'title-fade-in' : 'title-fade-out'} id='titles'>{TITLES[index]}</h2>
-                </div>
+const About = () => (
+    <div className="container">
+        <h2 className="section-title"><span className="section-kicker">01</span> About me</h2>
+        <div className="about-card">
+            <div className="about-text">
+                <p>
+                    I live in Ohio and work as a software engineer at JPMorgan Chase.
+                    Coding has always been a passion of mine, and in 2018 I turned it into a
+                    career by enrolling at Tech Elevator.
+                </p>
+                <p>
+                    When I'm not coding, I spend as much time as I can with my family and loved
+                    ones. You can also find me engrossed in the latest video game, or watching
+                    my favorite sports: football and baseball.
+                </p>
             </div>
-            <div className='container' id='intro'>
-                <p>I currently live in Ohio and work as a software engineer at JPMorgan Chase.</p>
-                <p>Coding is a passion of mine, and I decided to turn it into a career in 2018, when I enrolled at Tech Elevator.</p>
-                <p>When I am not coding, I try to spend as much time with my family and loved ones.</p>
-                <p>You can also find me engrossed in the latest video game or watching my favorite sports, football and baseball.</p>
-            </div>
+            <ul className="facts">
+                {FACTS.map(fact => (
+                    <li key={fact.label}>
+                        <i className={fact.icon} aria-hidden="true" />
+                        <span>{fact.label}</span>
+                    </li>
+                ))}
+            </ul>
         </div>
-    );
-};
+    </div>
+);
 
 export default About;
