@@ -9,17 +9,13 @@ import SocialMedia from './SocialMedia';
 function App() {
   return (
     <div>
-      <ScrollAnimation animateIn='fadeInDown'>
+      <ScrollAnimation animateIn='fadeInDown' className='page-section'>
         <About />
       </ScrollAnimation>
-      <br/>
-      <br/>
-      <ScrollAnimation animateIn="fadeInLeft">
+      <ScrollAnimation animateIn="fadeInLeft" className='page-section'>
         <Projects />
       </ScrollAnimation>
-      <br/>
-      <br/>
-      <ScrollAnimation animateIn="fadeInRight">
+      <ScrollAnimation animateIn="fadeInRight" className='page-section'>
         <SocialMedia />
       </ScrollAnimation>
     </div>

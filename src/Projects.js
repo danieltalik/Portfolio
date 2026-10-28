@@ -3,14 +3,14 @@ import PROJECTS from './data/projects';
 import './Projects.css';
 
 const Project = props => {
-    const { id, title, img, description, link } = props.project;
+    const { title, img, description, link } = props.project;
 
     return (
         <div className="project">
             <h3>{title}</h3>
-            <img src={img} alt='project' style={{width:300, height:300, borderRadius: 15}}></img>
+            <img src={img} alt={title} loading="lazy" className="project-img" />
             <p>{description}</p>
-            <a href={link}>{link}</a>
+            <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
         </div>
     );
 }
@@ -18,7 +18,7 @@ const Project = props => {
 const Projects = () => (
     <div>
         <h2>My Side Projects</h2>
-        <div>
+        <div className="project-list">
             {
                 PROJECTS.map(PROJECT => (
                     <Project key={PROJECT.id} project={PROJECT} />

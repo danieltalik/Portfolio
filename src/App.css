@@ -1,7 +1,22 @@
+.page-section + .page-section {
+  margin-top: 3rem;
+}
+
 .socialSite{
   display: inline-block;
   text-align: center;
   padding: 20px;
+}
+
+@media (max-width: 480px) {
+  .socialSite {
+    padding: 8px;
+  }
+  .fa {
+    padding: 14px;
+    font-size: 24px;
+    width: 24px;
+  }
 }
 .fa {
   padding: 20px;
