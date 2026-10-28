@@ -1,0 +1,23 @@
+.reveal {
+    opacity: 0;
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
+
+.reveal-from-up    { transform: translateY(40px); }
+.reveal-from-down  { transform: translateY(-40px); }
+.reveal-from-left  { transform: translateX(-60px); }
+.reveal-from-right { transform: translateX(60px); }
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Respect people who turn off animations in their OS settings. */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

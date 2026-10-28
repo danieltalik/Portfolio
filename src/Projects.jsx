@@ -1,4 +1,3 @@
-import React from 'react';
 import PROJECTS from './data/projects';
 import './Projects.css';
 
@@ -10,7 +9,7 @@ const Project = props => {
             <h3>{title}</h3>
             <img src={img} alt={title} loading="lazy" className="project-img" />
             <p>{description}</p>
-            <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
+            <a href={link} target="_blank" rel="noopener noreferrer" className="project-link">View on GitHub</a>
         </div>
     );
 }

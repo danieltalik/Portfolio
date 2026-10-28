@@ -2,22 +2,22 @@ const SOCIAL = [
     {
         name: "Email",
         link: "mailto:danieltalik@gmail.com",
-        type: "fa fa-envelope"
+        type: "fa-solid fa-envelope icon-email"
     },
     {
-        name: "Linkedin",
+        name: "LinkedIn",
         link: "https://linkedin.com/in/danieltalik",
-        type: "fa fa-linkedin"
+        type: "fa-brands fa-linkedin-in icon-linkedin"
     },
     {
         name: "GitHub",
         link: "https://github.com/danieltalik/",
-        type: "fa fa-github"
+        type: "fa-brands fa-github icon-github"
     },
     {
-        name: "Twitter",
-        link: "https://twitter.com/DTalik",
-        type: "fa fa-twitter"
+        name: "X",
+        link: "https://x.com/DTalik",
+        type: "fa-brands fa-x-twitter icon-x"
     },
 ]
 export default SOCIAL;

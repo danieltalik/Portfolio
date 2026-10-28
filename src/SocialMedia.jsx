@@ -1,4 +1,3 @@
-import React from 'react';
 import SOCIAL from './data/social';
 import './App.css';
 
@@ -11,7 +10,7 @@ const Social = props => {
             <p>{name}</p>
             <a
                 href={link}
-                className={type}
+                className={`social-icon ${type}`}
                 aria-label={name}
                 {...(isEmail ? {} : { target: '_blank', rel: 'noopener noreferrer' })}
             ></a>

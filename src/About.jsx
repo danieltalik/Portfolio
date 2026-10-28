@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import TITLES from './data/titles';
 import Me from './assets/MeUpdated.jpg';
 import banner from './assets/banner.jpg';

@@ -1,4 +1,10 @@
+:root {
+  color-scheme: light;
+}
+
 body {
+  background: #fff;
+  color: #111;
   font-family: 'Jost', sans-serif;
   text-align: center;
   margin: 0;

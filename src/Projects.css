@@ -21,6 +21,16 @@
     border-radius: 15px;
 }
 
-.project a {
-    overflow-wrap: anywhere;
+.project-link {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgb(45, 22, 83);
+    color: white;
+    text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+    background: rgb(75, 40, 130);
 }

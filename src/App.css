@@ -2,52 +2,43 @@
   margin-top: 3rem;
 }
 
-.socialSite{
+.socialSite {
   display: inline-block;
   text-align: center;
   padding: 20px;
 }
 
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover,
+.social-icon:focus-visible {
+  transform: scale(1.1);
+}
+
+.icon-email    { background: orange; }
+.icon-linkedin { background: #007bb5; }
+.icon-github   { background: black; }
+.icon-x        { background: black; }
+
+/* Must come after the base rules above so it wins on small screens. */
 @media (max-width: 480px) {
   .socialSite {
     padding: 8px;
   }
-  .fa {
-    padding: 14px;
+  .social-icon {
+    width: 52px;
+    height: 52px;
     font-size: 24px;
-    width: 24px;
   }
-}
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-github {
-  background-color: black;
-  color: white;
-}
-
-.fa-envelope {
-  background-color: orange;
-  color: white;
 }
